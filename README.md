@@ -15,15 +15,15 @@ This is the backend side for the MangBeli Application, a Capstone Project Bangki
 
     - Add Permissions to `allUsers` with role `Storage Object Viewer`.
 
-        ![Bucket settings](https://media.discordapp.net/attachments/880802395414736916/1187666072929841202/image.png?ex=6597b739&is=65854239&hm=01a1b6e040862da2ae5300d00508f4b6e9855965009fd7f0285ce58efca6c0c7&=&format=webp&quality=lossless)
+        ![Bucket settings](https://raw.githubusercontent.com/Bangkit-Capstone-CH2-PS124-Team/mangbeli-api/main/assets/img/Bucket-settings.png)
 
 - Create a Google Cloud Storage Bucket Service Account for image upload and deletion.
     - You can make a custom role `storageObjectUploaderDeleter` with permissions `storage.objects.create` and `storage.objects.delete`.
 
-        ![Custom role](https://media.discordapp.net/attachments/880802395414736916/1187669218167111760/image.png?ex=6597ba27&is=65854527&hm=2e71ed5a65cd436e35e7937faee772cb968e6e97d137f5037d54ca6df73d53f2&=&format=webp&quality=lossless)
+        ![Custom role](https://raw.githubusercontent.com/Bangkit-Capstone-CH2-PS124-Team/mangbeli-api/main/assets/img/Custom-role.png)
     - Alternatively, use the predefined role `Storage Object Admin`.
 
-        ![Predefined role](https://media.discordapp.net/attachments/880802395414736916/1187669715393462272/image.png?ex=6597ba9d&is=6585459d&hm=b14ae5166dcfb51802366ea412951a3357053dac64f9028b73e4c9c1ab654693&=&format=webp&quality=lossless)
+        ![Predefined role](https://raw.githubusercontent.com/Bangkit-Capstone-CH2-PS124-Team/mangbeli-api/main/assets/img/Predefined-role.png)
 
     - Manage keys -> KEYS -> ADD KEY -> JSON -> Download -> Move to the API directory and rename to `credentials-bucket.json`.
 
@@ -36,7 +36,7 @@ This is the backend side for the MangBeli Application, a Capstone Project Bangki
         - Name: `Public`
         - Network: `0.0.0.0/0`
 
-        ![Public IP](https://media.discordapp.net/attachments/880802395414736916/1187670326792945674/image.png?ex=6597bb2f&is=6585462f&hm=9ee8aeea0970df747a61bcfe65ca365af1acaa13fb2772a42b8c50e514309d22&=&format=webp&quality=lossless)
+        ![Public IP](https://raw.githubusercontent.com/Bangkit-Capstone-CH2-PS124-Team/mangbeli-api/main/assets/img/Public-IP.png)
 
 - Connect to MySQL instance to create a database and table (table columns documented [here](https://bangkit-capstone-ch2-ps124-team.github.io/mangbeli-api-doc/#/?id=database)).
 
@@ -46,7 +46,7 @@ This is the backend side for the MangBeli Application, a Capstone Project Bangki
     - Project settings -> Cloud Messaging -> Manage Service Accounts -> Manage keys -> KEYS -> ADD KEY -> JSON -> Download.
     - Move the downloaded file to the API directory and rename it to `credentials-firebase.json`.
 
-    ![FCM](https://media.discordapp.net/attachments/880802395414736916/1187670657048264704/Screenshot_2023-12-21_1838051.png?ex=6597bb7e&is=6585467e&hm=eafdf2cce8362a6c1a0fd212e1f4cab92baa6675c7b3743f56cadd6be64e8caf&=&format=webp&quality=lossless&width=767&height=499)
+    ![FCM](https://raw.githubusercontent.com/Bangkit-Capstone-CH2-PS124-Team/mangbeli-api/main/assets/img/FCM.png)
 
 ### Google Maps Platform:
 
